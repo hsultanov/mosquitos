@@ -1,0 +1,10 @@
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp.g.resources
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\GantryPointGrey.Form1.resources
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp.Properties.Resources.resources
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp_vs2013.csproj.GenerateResource.Cache
+C:\_project\1710-01 MosquitoNet\App\src\Vision\bin64\Debug\FlyCapture2SimpleGUI_CSharp.exe
+C:\_project\1710-01 MosquitoNet\App\src\Vision\bin64\Debug\FlyCapture2SimpleGUI_CSharp.pdb
+C:\_project\1710-01 MosquitoNet\App\src\Vision\bin64\Debug\FlyCap2CameraControld_v120.dll
+C:\_project\1710-01 MosquitoNet\App\src\Vision\bin64\Debug\FlyCapture2Managedd_v120.dll
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp.exe
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp.pdb

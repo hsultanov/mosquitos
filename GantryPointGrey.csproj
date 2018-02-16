@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{851056FF-F11D-84E5-7A04-80D0E610509C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GantryPointGrey</RootNamespace>
+    <AssemblyName>Gantry Point Grey</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x86\Debug\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin64\Debug\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x64\Debug\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x86\Release\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin64\Release\</OutputPath>
+    <BaseIntermediateOutputPath>obj\x64\Release\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FlyCap2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Choose>
+    <When Condition=" ('$(Configuration)|$(Platform)' == 'Release|AnyCPU' And Exists('..\..\bin') And !Exists('..\..\bin64')) Or ('$(Configuration)|$(Platform)' == 'Release|x86' And Exists('..\..\bin'))  ">
+      <ItemGroup>
+        <Reference Include="FlyCapture2Managed_v140">
+          <HintPath>..\..\bin\vs2015\FlyCapture2Managed_v140.dll</HintPath>
+        </Reference>
+        <Reference Include="FlyCap2CameraControl_v140">
+          <HintPath>..\..\bin\vs2015\FlyCap2CameraControl_v140.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <When Condition=" ('$(Configuration)|$(Platform)' == 'Debug|AnyCPU' And Exists('..\..\bin') And !Exists('..\..\bin64')) Or ('$(Configuration)|$(Platform)' == 'Debug|x86' And Exists('..\..\bin'))  ">
+      <ItemGroup>
+        <Reference Include="FlyCapture2Managedd_v140">
+          <HintPath>..\..\bin\vs2015\FlyCapture2Managedd_v140.dll</HintPath>
+        </Reference>
+        <Reference Include="FlyCap2CameraControld_v140">
+          <HintPath>..\..\bin\vs2015\FlyCap2CameraControld_v140.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <When Condition=" ('$(Configuration)|$(Platform)' == 'Release|AnyCPU' And Exists('..\..\bin64')) Or ('$(Configuration)|$(Platform)' == 'Release|x64' And Exists('..\..\bin64'))  ">
+      <ItemGroup>
+        <Reference Include="FlyCapture2Managed_v140">
+          <HintPath>..\..\bin64\vs2015\FlyCapture2Managed_v140.dll</HintPath>
+        </Reference>
+        <Reference Include="FlyCap2CameraControl_v140">
+          <HintPath>..\..\bin64\vs2015\FlyCap2CameraControl_v140.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <When Condition=" ('$(Configuration)|$(Platform)' == 'Debug|AnyCPU' And Exists('..\..\bin64')) Or ('$(Configuration)|$(Platform)' == 'Debug|x64' And Exists('..\..\bin64'))  ">
+      <ItemGroup>
+        <Reference Include="FlyCapture2Managedd_v140">
+          <HintPath>..\..\bin64\vs2015\FlyCapture2Managedd_v140.dll</HintPath>
+        </Reference>
+        <Reference Include="FlyCap2CameraControld_v140">
+          <HintPath>..\..\bin64\vs2015\FlyCap2CameraControld_v140.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="FlyCap2CameraControld_v140, Version=2.11.3.164, Culture=neutral, PublicKeyToken=5abeeda345e59824, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin64\Debug\FlyCap2CameraControld_v140.dll</HintPath>
+    </Reference>
+    <Reference Include="FlyCapture2Managedd_v140, Version=2.11.3.164, Culture=neutral, PublicKeyToken=76c6583b4a4585f4, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin64\Debug\FlyCapture2Managedd_v140.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JobConfiguration.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VisionInstruction.cs" />
+    <None Include="Resources\App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="FlyCap2.ico" />
+    <Compile Include="AsyncServer.cs" />
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Dependency</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>DesignerType</SubType>
+    </EmbeddedResource>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="Resources\FlyCap2.ico" />
+    <Resource Include="Resources\control.bmp" />
+    <Resource Include="Resources\start.bmp" />
+    <Resource Include="Resources\stop.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tray.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donugGrey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donutGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donutRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donutGrey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPlayOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPlay2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPauseOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPause2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnStopOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPauseDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCamera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCamDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MosquitoNet logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>IF $(Platform)==x86 (
+copy "$(ProjectDir)..\..\bin\vs2015\libiomp5md.dll" "$(TargetDir)"
+IF $(ConfigurationName)==Debug (
+copy "$(TargetDir)$(TargetFileName)" "$(ProjectDir)..\..\bin\vs2015\$(TargetName)d_v140$(TargetExt)"
+copy "$(ProjectDir)..\..\bin\vs2015\FlyCapture2d_v140.dll" "$(TargetDir)"
+) ELSE (
+copy "$(TargetDir)$(TargetFileName)" "$(ProjectDir)..\..\bin\vs2015\$(TargetName)_v140$(TargetExt)"
+copy "$(ProjectDir)..\..\bin\vs2015\FlyCapture2_v140.dll" "$(TargetDir)"
+)
+) ELSE IF $(Platform)==x64 (
+copy "$(ProjectDir)..\..\bin64\vs2015\libiomp5md.dll" "$(TargetDir)"
+IF $(ConfigurationName)==Debug (copy "$(TargetDir)$(TargetFileName)" "$(ProjectDir)..\..\bin64\vs2015\$(TargetName)d_v140$(TargetExt)"
+copy "$(ProjectDir)..\..\bin64\vs2015\FlyCapture2d_v140.dll" "$(TargetDir)"
+) ELSE (
+copy "$(TargetDir)$(TargetFileName)" "$(ProjectDir)..\..\bin64\vs2015\$(TargetName)_v140$(TargetExt)"
+copy "$(ProjectDir)..\..\bin64\vs2015\FlyCapture2_v140.dll" "$(TargetDir)"
+)
+)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

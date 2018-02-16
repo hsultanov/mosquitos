@@ -1,0 +1,23 @@
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\bin64\Debug\FlyCapture2SimpleGUI_CSharp.exe
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\bin64\Debug\FlyCapture2SimpleGUI_CSharp.pdb
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\bin64\Debug\FlyCap2CameraControld_v140.dll
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\bin64\Debug\FlyCapture2Managedd_v140.dll
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp_vs2015.csprojResolveAssemblyReference.cache
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp.g.resources
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp.Form1.resources
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp.Properties.Resources.resources
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp_vs2015.csproj.GenerateResource.Cache
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp_vs2015.csproj.CoreCompileInputs.cache
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp.exe
+C:\_project\1710-01 MosquitoNet\App\src\FlyCapture2SimpleGUI_CSharp\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp.pdb
+C:\_project\1710-01 MosquitoNet\App\src\Vision\bin64\Debug\FlyCap2CameraControld_v140.dll
+C:\_project\1710-01 MosquitoNet\App\src\Vision\bin64\Debug\FlyCapture2Managedd_v140.dll
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp_vs2015.csprojResolveAssemblyReference.cache
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\FlyCapture2SimpleGUI_CSharp_vs2015.csproj.GenerateResource.Cache
+C:\_project\1710-01 MosquitoNet\App\src\Vision\bin64\Debug\Gantry Point Grey.exe
+C:\_project\1710-01 MosquitoNet\App\src\Vision\bin64\Debug\Gantry Point Grey.pdb
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\Gantry Point Grey.g.resources
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\Gantry Point Grey.exe
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\Gantry Point Grey.pdb
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\GantryPointGrey.Form1.resources
+C:\_project\1710-01 MosquitoNet\App\src\Vision\obj\x64\Debug\GantryPointGrey.Properties.Resources.resources
